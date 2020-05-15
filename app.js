@@ -12,4 +12,8 @@ app.get("/friends", function(req, res) {
     res.render("friends", { friends: friends });
 
 });
+
+app.post("/addfriend", function(req, res) {
+    res.send("You have reached the post route")
+})
 app.listen(3000);
